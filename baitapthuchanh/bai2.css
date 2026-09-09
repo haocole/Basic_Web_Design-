@@ -1,0 +1,82 @@
+/* Reset và căn giữa bảng */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #333;
+}
+
+/* Căn giữa bảng */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== DÒNG TIÊU ĐỀ ===== */
+.table-header {
+    font-size: 25px;           /* Cỡ chữ 25 */
+    background-color: #0066cc; /* Màu xanh */
+    color: white;
+}
+
+.table-header th {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+}
+
+/* ===== CÁC DÒNG CÒN LẠI ===== */
+table td {
+    font-size: 14px;           /* Cỡ chữ 14 */
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+/* Mỗi dòng một màu khác nhau (dùng nth-child) */
+tr:nth-child(2) td {
+    background-color: #ffcccc;  /* Màu hồng nhạt */
+}
+
+tr:nth-child(3) td {
+    background-color: #ccffcc;  /* Màu xanh lá nhạt */
+}
+
+tr:nth-child(4) td {
+    background-color: #ccccff;  /* Màu xanh dương nhạt */
+}
+
+/* ===== HOVER: Màu khác khi đưa chuột vào ===== */
+tr:nth-child(2):hover td {
+    background-color: #ff9999;  /* Hồng đậm hơn */
+    cursor: pointer;
+}
+
+tr:nth-child(3):hover td {
+    background-color: #99ff99;  /* Xanh lá đậm hơn */
+    cursor: pointer;
+}
+
+tr:nth-child(4):hover td {
+    background-color: #9999ff;  /* Xanh dương đậm hơn */
+    cursor: pointer;
+}
+
+/* ===== ẢNH ===== */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
